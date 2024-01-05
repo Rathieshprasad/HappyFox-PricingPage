@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <script>
+       window.onload = function() {
+    // This code will run when the entire page has loaded
+    document.getElementById("myButton").onclick = function() {
+      document.getElementById("cs").innerHTML = 'Starter';
+      document.getElementById("cg").innerHTML = 'Growth';
+      document.getElementById("csc").innerHTML = 'Scale';
+      document.getElementById("csp").innerHTML = 'Scale Plus';
+      document.getElementById("myButton").style.backgroundColor = '#fff';
+      document.getElementById("abp").style.backgroundColor = '#feeada';
+    };
+
+    document.getElementById("abp").onclick = function() {
+      document.getElementById("cs").innerHTML = 'Mighty';
+      document.getElementById("cg").innerHTML = 'Fantastic';
+      document.getElementById("csc").innerHTML = 'Enterprise';
+      document.getElementById("csp").innerHTML = 'Enterprise Plus';
+      document.getElementById("myButton").style.backgroundColor = '#feeada';
+      document.getElementById("abp").style.backgroundColor = '#fff';
+    };
+  };
+    </script>
+
+    <!-- Top Nav Bar -->
+    <title>HappyFox Help Desk Pricing</title>
+    <div class="logo">
+        <img id="hfTopbarlogo" src="//assets.www.happyfox.com/v2/images/site-nav/topbar-logo-black.svg" width="116" height="24" alt="happyfox logo" class="hf-productbar__logo">
+        <button>Products</button>
+        <div class="log-in">Log In</div>
+    </div>
+
+    
+    <!-- Help Desk Nav bar -->
+    <nav>
+        <div class="hd-nav">
+        <div class="hd">
+        <img src="https://assets.www.happyfox.com/v2/images/site-nav/HD-logo.svg" alt="hd-icon" width="30">
+        <h3>helpdesk</h3>
+        </div>
+        <div class="nav-elements">
+            <ul>
+                <li><button>Features</button></li>
+                <li><button>Solutions <span class="features__cl"></span></button></li>
+                <li><button>Pricing</button></li>
+                <li><button>Resources <span class="features__cl"></span></button></li>
+            </ul>
+        </div>
+
+        <div class="hd-btn">
+            <button>Get a Demo</button>
+        </div>
+    </div>
+    </nav>
+</head>
+
+
+<body>
+    <!-- Banner -->
+    <div class="banner">
+        <h1>Plans & Pricing</h1>
+        <div class="button-container">
+            <button class="button button-white" id="abp">Agent Based Pricing</button>
+            <button class="button button-dark-beige" id="myButton" >Unlimited Planning</button>
+        </div>
+    </div>
+    
+
+    <!-- Button Section -->
+    <div class="button-section">
+        <button class="btns">Monthly</button>
+        <button class="btns">Annual</button>
+  <div class="btn-subtext">
+        <button class="btns">2-Year Savings Plan<p>Paid Up-front</p></button>
+    
+  </div>
+  <div class="btn-subtext">
+  <button class="btns">3 Year Contract<p>Billed Anually</p></button>
+  </div>
+    </div>
+
+
+    <!-- Price Cards -->
+    <div class="wrapper">
+        <div class="card">
+            <h3 id="cs">Mighty</h3>
+            <h1><span>$</span>26 <span>Per agent/mo</span></h1>
+            <p> 33% Savings<sup>*</sup></p>
+            <hr>
+            <ul>
+                <li>Omnichannel Ticket Creation</li>
+                <li>SLA Management</li>
+                <li>Knowledge Base</li>
+                <li>SSO (GSuite/ SAML/Azure)</li>
+                <li>Migration Assistance</li>
+            </ul>
+            <a href="">Get a Demo <span class="features__cl"></span></a>
+        </div>
+        <div class="card">
+            <h3 id="cg">Fantasic</h3>
+            <h1><span>$</span>26 <span>Per agent/mo</span></h1>
+            <p> 33% Savings<sup>*</sup></p>
+            <hr>
+            <ul>
+                <li>Omnichannel Ticket Creation</li>
+                <li>SLA Management</li>
+                <li>Knowledge Base</li>
+                <li>SSO (GSuite/ SAML/Azure)</li>
+                <li>Migration Assistance</li>
+            </ul>
+            <a href="">Get a Demo <span class="features__cl"></span></a>
+        </div>
+        <div class="card">
+            <p style="color: red; margin-bottom: 0; font-size: 15px;">Most Popular</p>
+            <h3 style="margin-top: 5px;" id="csc">Enterprise</h3>
+            <h1><span>$</span>26 <span>Per agent/mo</span></h1>
+            <p> 33% Savings<sup>*</sup></p>
+            <hr>
+            <ul>
+                <li>Omnichannel Ticket Creation</li>
+                <li>SLA Management</li>
+                <li>Knowledge Base</li>
+                <li>SSO (GSuite/ SAML/Azure)</li>
+                <li>Migration Assistance</li>
+            </ul>
+            <a href="">Get a Demo <span class="features__cl"></span></a>
+        </div>
+        <div class="card">
+            <h3 id="csp">Enterprise Plus</h3>
+            <h1><span>$</span>26 <span>Per agent/mo</span></h1>
+            <p> 33% Savings <sup>*</sup></p>
+            <hr>
+            <ul>
+                <li>Omnichannel Ticket Creation</li>
+                <li>SLA Management</li>
+                <li>Knowledge Base</li>
+                <li>SSO (GSuite/ SAML/Azure)</li>
+                <li>Migration Assistance</li>
+            </ul>
+            <a href="">Get a Demo <span class="features__cl"></span></a>
+
+        </div>
+    </div> 
+    
+
+
+    <!-- Additional Info Box -->
+    <div class="additional-info">
+        <p>All plans require a minimum of 5 help desk agents. Non-profit and educational organizations are eligible for a discount.</p>
+    </div>
+    
+
+
+    <!-- Comparison Table  -->
+    <hr style="background-color: #cccccc ; height: 2px ; border: 0; margin:0;">
+    <div class="heading-box">
+        <h2>Compare Help Desk Plans</h2>
+    </div>
+    <div>
+        <table class="features">
+            <thead>
+              <tr>
+                <th></th>
+                <th class="features__cell features__cell--bold  features__cell--large" style="font-size: 1.25em; font-weight: 500;">Mighty</th>
+                <th class="features__cell features__cell--bold features__cell--large" style="font-size: 1.25em; font-weight: 500;">Fantasic</th>
+                <th class="features__cell features__cell--bold features__cell--large" style="font-size: 1.25em; font-weight: 500;">Enterprise</th>
+                <th class="features__cell features__cell--bold  features__cell--large" style="font-size: 1.25em; font-weight: 500;">Enterprise+</th>
+
+              </tr>
+              <tr style="border-bottom: 1px solid #ebebee;"></tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td class="features__cell features__cell--bold" colspan="5" style="font-size: 1em; font-weight:600;">Core Features</td>
+              </tr>
+              <tr>
+                <td class="features__cell" style="font-weight:100;text-decoration: underline;">
+                  Unlimited Mailboxes
+                </td>
+                <td class="features__cell features__cell--center">
+                  <span class="features__tick"></span>
+                </td>
+                <td class="features__cell features__cell--center">
+                  <span class="features__tick"></span>
+                </td>
+                <td class="features__cell features__cell--center">
+                  <span class="features__tick"></span>
+                </td>
+                <td class="features__cell features__cell--center">
+                    <span class="features__tick"></span>
+                  </td>
+              </tr>
+
+              <tr>
+                <td class="features__cell" style="font-weight:100; text-decoration: underline;">
+                  Unlimited Mailboxes
+                </td>
+                <td class="features__cell features__cell--center">
+                  <span class="features__dash"></span>
+                </td>
+                <td class="features__cell features__cell--center">
+                  <span class="features__tick"></span>
+                </td>
+                <td class="features__cell features__cell--center">
+                  <span class="features__tick"></span>
+                </td>
+                <td class="features__cell features__cell--center">
+                    <span class="features__tick"></span>
+                  </td>
+              </tr>
+
+              <tr>
+                <td class="features__cell" style="font-weight:100;text-decoration:underline;">
+                  Unlimited Mailboxes
+                </td>
+                <td class="features__cell features__cell--center">
+                  <span class="features__dash"></span>
+                </td>
+                <td class="features__cell features__cell--center">
+                  <span class="features__tick"></span>
+                </td>
+                <td class="features__cell features__cell--center" style="font-weight: 100;">
+                  Upto 1 TB
+                </td>
+                <td class="features__cell features__cell--center">
+                    <span class="features__tick"></span>
+                  </td>
+              </tr>
+              <tr>
+                <td class="features__cell features__cell--bold" colspan="5" style="font-size: 1em; font-weight:600;">Core Features</td>
+              </tr>
+              <tr>
+                <td class="features__cell" style="font-weight:100;text-decoration: underline;">
+                  Unlimited Mailboxes
+                </td>
+                <td class="features__cell features__cell--center">
+                  <span class="features__tick"></span>
+                </td>
+                <td class="features__cell features__cell--center">
+                  <span class="features__tick"></span>
+                </td>
+                <td class="features__cell features__cell--center">
+                  <span class="features__tick"></span>
+                </td>
+                <td class="features__cell features__cell--center">
+                    <span class="features__tick"></span>
+                  </td>
+              </tr>
+
+              <tr>
+                <td class="features__cell" style="font-weight:100; text-decoration: underline;">
+                  Unlimited Mailboxes
+                </td>
+                <td class="features__cell features__cell--center">
+                  <span class="features__dash"></span>
+                </td>
+                <td class="features__cell features__cell--center">
+                  <span class="features__tick"></span>
+                </td>
+                <td class="features__cell features__cell--center">
+                  <span class="features__tick"></span>
+                </td>
+                <td class="features__cell features__cell--center">
+                    <span class="features__tick"></span>
+                  </td>
+              </tr>
+
+              <tr>
+                <td class="features__cell" style="font-weight:100;text-decoration:underline;">
+                  Unlimited Mailboxes
+                </td>
+                <td class="features__cell features__cell--center">
+                  <span class="features__dash"></span>
+                </td>
+                <td class="features__cell features__cell--center">
+                  <span class="features__tick"></span>
+                </td>
+                <td class="features__cell features__cell--center" style="font-weight: 100;">
+                  Upto 1 TB
+                </td>
+                <td class="features__cell features__cell--center">
+                    <span class="features__tick"></span>
+                  </td>
+              </tr>
+            </tbody>
+          </table>
+    </div>
+
+    <!-- FAQ Section  -->
+    <div>
+        <div class="accordion faq">
+            <div class="card">
+            <h1>Frequently Asked Questions</h1>
+            <div class="accordion-item">
+                <input type="checkbox" id="accordion1">
+                <label for="accordion1" class="accordion-item-title"><span class="icon"></span>Who are help desk agents?</label>
+                <div class="accordion-item-desc">Support agents who will be actively managing and responding tickets raised by customers.</div>
+            </div>
+        
+            <div class="accordion-item">
+                <input type="checkbox" id="accordion2">
+                <label for="accordion2" class="accordion-item-title"><span class="icon"></span>Who are help desk agents?</label>
+                <div class="accordion-item-desc">Support agents who will be actively managing and responding tickets raised by customers.</div>
+            </div>
+        
+            <div class="accordion-item">
+                <input type="checkbox" id="accordion3">
+                <label for="accordion3" class="accordion-item-title"><span class="icon"></span>Who are help desk agents?</label>
+                <div class="accordion-item-desc">Support agents who will be actively managing and responding tickets raised by customers.</div>
+            </div>
+        
+            <div class="accordion-item">
+                <input type="checkbox" id="accordion4">
+                <label for="accordion4" class="accordion-item-title"><span class="icon"></span>Who are help desk agents?</label>
+                <div class="accordion-item-desc">Support agents who will be actively managing and responding tickets raised by customers.</div>
+            </div>
+        
+            <div class="accordion-item">
+                <input type="checkbox" id="accordion5">
+                <label for="accordion5" class="accordion-item-title"><span class="icon"></span>Who are help desk agents?</label>
+                <div class="accordion-item-desc">Support agents who will be actively managing and responding tickets raised by customers.</div>
+            </div>
+        </div>
+        </div>
+    </div>
+
+    <!-- More Section  -->
+    <div>
+        <h1 style="text-align: center;">More From HappyFox</h1>
+    </div>
+
+    <div class="wrapper-more">
+        <div class="card-more" style="text-align: center;">
+            <img src="https://assets.www.happyfox.com/v2/images/pricing-lc.svg" alt="LC">
+            <h3 style="color: black;">Live Chat</h3>
+            <p style="color: #555555;"> Chat with your customers instantly on mobile, desktop and web.</p>
+            <a href="">Get a Demo ></a>
+        </div>
+
+        <div class="card-more" style="text-align: center;">
+            <img src="https://assets.www.happyfox.com/v2/images/pricing-cb.svg" alt="LC">
+            <h3 style="color: black;">Chatbot</h3>
+            <p style="color: #555555;"> Chat with your customers instantly on mobile, desktop and web.</p>
+            <a href="">Get a Demo ></a>
+        </div>
+
+        <div class="card-more" style="text-align: center;">
+            <img src="https://assets.www.happyfox.com/v2/images/pricing-ai.svg" alt="LC">
+            <h3 style="color: black;">Assist Ai</h3>
+            <p style="color: #555555;"> Chat with your customers instantly on mobile, desktop and web.</p>
+            <a href="">Get a Demo ></a>
+        </div>
+
+        <div class="card-more" style="text-align: center;">
+            <img src="https://assets.www.happyfox.com/v2/images/pricing-bi.svg" alt="LC">
+            <h3 style="color: black;">Business Intelligence</h3>
+            <p style="color: #555555;"> Chat with your customers instantly on mobile, desktop and web.</p>
+            <a href="">Get a Demo ></a>
+        </div>
+
+        <div class="card-more" style="text-align: center;">
+            <img src="https://assets.www.happyfox.com/v2/images/pricing-wa.svg" alt="LC">
+            <h3 style="color: black;">Workflow Automation</h3>
+            <p style="color: #555555;"> Chat with your customers instantly on mobile, desktop and web.</p>
+            <a href="">Get a Demo ></a>
+        </div>
+    </div>    
+</body>
+</html>

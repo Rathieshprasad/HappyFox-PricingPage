@@ -1,0 +1,490 @@
+
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+/************************** Top navbar **********************************/
+
+.logo{
+    padding: 20px 70px 0px ;
+}
+.logo img{
+    padding: 5px 5px 0px 5px;
+}
+.logo .log-in{
+    position: absolute;
+    right: 0;
+    top: 0;
+    padding: 20px 20px;
+    margin-right: 50px;
+    margin-top: 5px;
+    color: #646f79;
+    font-size: small;
+    font-weight: 100;
+}
+.logo button{
+    padding: 15px 15px 10px 15px;
+    margin: 0 10px;
+    border: 1px solid #ffcbca;
+    border-radius: 10px 10px 0px 0px;
+    cursor: pointer;
+    color: #000000;
+    background-color: #ffeceb;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+}
+/********************* Helpdesk navbar *********************************/
+nav{
+    border: 1px solid #ffcbca;
+    border-bottom: none;
+    background-color:#ffeceb ;
+}
+
+nav .hd{
+    margin-left: 80px;
+    display: flex;
+    margin-bottom: 0;
+    
+}
+nav h3{
+    padding-left: 10px;
+    font-size: 25px;
+    font-weight: lighter;
+}
+
+.hd-nav{
+    display: flex;
+    flex-direction: row;
+}
+.nav-elements{
+    padding-left: 100px;
+}
+.nav-elements li{
+    padding-left: 80px;
+    padding-top: 5px;
+    list-style-type: none; 
+    display: inline-block;
+}
+.nav-elements li button{
+    padding: 10px 10px;
+    border-radius: 10px;
+    border: none;
+    background-color: #ffeceb;
+    color: #000000;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.nav-elements li button:hover{
+    transition: 0.5s;
+    background-color: #ffffff;
+}
+
+.hd-btn{
+    margin-left: 100px;
+    margin-top: 23px;
+}
+
+.hd-btn button{
+    padding: 7px 10px;
+    border-radius: 5px;
+    border:none;
+    background-color: red;
+    color: white;
+}
+
+/*************************** Banner part**********************/
+
+.banner {
+    background: url("https://assets.www.happyfox.com/v2/images/pricing-new-banner-bg-new.png"); 
+    background-size: cover;
+    text-align: center;
+    padding: 100px 0;
+    position: relative;
+    
+}
+
+.banner h1 {
+    color: #333; 
+    font-size: 36px;
+    margin: 0;
+    margin-bottom: 20px; 
+}
+
+.button-container {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    justify-content: center;
+    margin-top: 20px; 
+}
+
+.button {
+    padding: 20px 40px;
+    margin: 0 10px;
+    border: none;
+    border-radius: 10px 10px 0px 0px;
+    cursor: pointer;
+    color: #fff;
+    font-size: 16px;
+    text-align: center;
+    text-decoration: none;
+}
+
+.button-white {
+    background-color: #fff; 
+    color: #333; 
+}
+
+.button-dark-beige {
+    background-color: #feeada; 
+    color: #333;
+}
+
+.button.button-dark-beige:hover {
+    background-color:#fff;
+    transition: 0.5;
+}
+
+
+
+/************************* Button section *************************/
+
+.button-section {
+    display:flex;
+    justify-content: space-between;
+      background-color: #f5f4f4; 
+      text-align: center;
+      padding: 20px 20px; 
+      margin: 60px 40px 0px; 
+      max-width: 1200px; 
+      border-radius: 15px;
+    overflow:hidden;
+  }
+  
+  .btns{
+      position: relative;
+      padding: 3px 100px;
+      border: black;
+      background-color: #f5f4f4;
+      border-radius: 10px 10px 10px 10px;
+      cursor: pointer;
+      text-align: center;
+      text-decoration: none;
+      font-size: 16px;
+      font-weight: 200;
+      
+  }
+  
+  .btns:hover {
+      background-color: #fff;
+      border: 1.5px solid #c8c7c7;
+      font-weight: 550;
+      
+  }
+  
+  .btn-subtext p{
+    font-size: 13px;
+    margin-top: 5px;
+  }
+
+ /******************************* Price Cards ************************************************/
+
+.wrapper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: rgba(0,0,0,0.7);  
+}
+.wrapper .card{
+    max-width: 300px;
+    background-color: white;
+    padding: 40px;
+    margin: 30px 15px;
+    border-radius: 10px;
+}
+
+.wrapper .card h3{
+    color: #212529;
+    font-size: 25px;
+    font-weight: 500;
+}
+
+.wrapper .card h1{
+    font-size:40px;
+    font-weight: 550;
+}
+.wrapper .card span{
+    font-size: 25px;
+    font-weight: 500;
+}
+
+.wrapper .card span{
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.wrapper .card p{
+    font-size: 17px;
+    color: #009928;
+}
+sup{
+    font-size: 17px;
+    color: #009928;
+}
+hr { background-color: #eeeeee; height: 1px; border: 0; }
+
+.wrapper .card ul{
+    padding: 0;
+    list-style-type: circle;
+}
+
+.wrapper .card li{
+    font-size: 15px;
+    font-weight: 100;
+    margin-bottom: 20px;
+}
+
+.wrapper .card a{
+    margin: 20px 0;
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    color: #000000;
+    background-color: #f9f9f9;
+    padding: 15px;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: 0.4s;
+}
+
+.wrapper .card:hover{
+    transition: 0.3s;
+    box-shadow: 10px 10px 10px -1px rgba(10,99,169,0.16),
+    3px 3px 10px -1px rgba(255,255,255,0.7);
+}
+
+.wrapper .card a:hover{
+    color: #fff;
+    background-color: red;
+    transition: 0.3s;
+}
+
+.additional-info {
+    background-color: #f5f4f4; 
+    text-align: center;
+    padding: 20px 0; 
+    margin: 60px auto; 
+    max-width: 600px; 
+    border-radius: 25px; 
+}
+
+/************************ Comparison Table ***********************/
+
+.heading-box {
+    background-color: #f8f8f8; 
+    text-align: center;
+    padding: 30px 0; 
+    
+    
+}
+table{
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 50px;
+    width: 75%;
+    border-collapse: separate;
+}
+
+tr:nth-child(even) {background-color: #fafafa;}
+
+.features {
+    justify-content: center;
+    border-collapse: collapse;
+    font-family: sans-serif;
+  }
+  
+  .features__cell {
+    max-width: 250px;
+    font-size: 0.9em;
+    font-weight: normal;
+    padding: 0.5em 1em;
+    color: #333333;
+    line-height: 1.4;
+  }
+  
+  .features__cell--bold {
+    font-weight: bold;
+  }
+  
+  .features__cell--shaded {
+    background: #eeeeee;
+  }
+  
+  .features__cell--large {
+    font-size: 1.25em;
+  }
+  
+  .features__cell--center {
+    text-align: center;
+  }
+  
+  .features__tick::after {
+    content: "\2714";
+    font-size: 1em;
+    color: green;
+  }
+
+  .features__cl::after {
+    content: "\276f";
+    font-size: 0.7em;
+    color: black;
+  }
+
+  .features__dash::after {
+    content: "\002D";
+    font-size: 2em;
+    color: #e2e2e2;
+  }
+
+/*************************** FAQ Section ***************************/
+
+  .accordion {
+    display: flex;
+    flex-direction: column;
+    font-family: "Sora", sans-serif;
+    max-width: 991px;
+    min-width: 320px;
+    margin: 50px auto;
+    padding: 0 50px;
+}
+.accordion h1 {
+    font-size: 32px;
+    color: #323623;
+    text-align: center;
+}
+.accordion-item {
+    margin-top: 16px;
+    border: 1px solid #fcfcfc;
+    border-radius: 6px;
+    background: #ffffff;
+    box-shadow: rgba(0, 0, 0, 0.05) 0px 1px 2px 0px;
+}
+.accordion-item .accordion-item-title {
+    position: relative;
+    margin: 0;
+    display: flex;
+    width: 100%;
+    font-size: 15px;
+    font-weight: 500;
+    cursor: pointer;
+    justify-content: space-between;
+    flex-direction: row-reverse;
+    padding: 14px 20px;
+    box-sizing: border-box;
+    align-items: center;
+}
+.accordion-item .accordion-item-desc {
+    display: none;
+    font-size: 14px;
+    line-height: 22px;
+    font-weight: 300;
+    color: #444;
+    border-top: 1px dashed #ddd;
+    padding: 10px 20px 20px;
+    box-sizing: border-box;
+}
+.accordion-item input[type="checkbox"] {
+    position: absolute;
+    height: 0;
+    width: 0;
+    opacity: 0;
+}
+.accordion-item input[type="checkbox"]:checked ~ .accordion-item-desc {
+    display: block;
+}
+.accordion-item
+    input[type="checkbox"]:checked
+    ~ .accordion-item-title
+    .icon:after {
+    content: "-";
+    font-size: 20px;
+}
+.accordion-item input[type="checkbox"] ~ .accordion-item-title .icon:after {
+    content: "+";
+    font-size: 20px;
+}
+.accordion-item:first-child {
+    margin-top: 0;
+}
+.accordion-item .icon {
+    margin-left: 14px;
+}
+
+.faq{
+    border-radius: 25px;
+    padding: 50px;
+    box-shadow: 0 4px 8px 0 #ebebeb, 0 6px 20px 0 #ebebeb;
+}
+
+/******************************* More section *****************************/
+
+.wrapper-more {
+    padding: 0px 80px;
+    display: flex;
+    justify-content: start;
+    align-items: flex-start; 
+    flex-wrap: wrap;
+    color: rgba(0, 0, 0, 0.7);
+}
+
+.wrapper-more .card-more {
+    flex: 1 0 calc(33.33% - 30px); 
+    max-width: calc(33.33% - 30px);
+    background-color: white;
+    padding: 40px;
+    margin: 15px;
+    border-radius: 10px;
+    box-sizing: border-box;
+}
+
+.wrapper-more .card-more:nth-child(4),
+.wrapper-more .card-more:nth-child(5) {
+    margin-left: 0;
+}
+
+.wrapper-more .card-more h3 {
+    color: #212529;
+    font-size: 24px;
+    font-weight: 450;
+}
+
+.wrapper-more .card-more a {
+    margin: 20px 0px;
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    padding: 15px;
+    border-radius: 5px;
+    color: #212529;
+    font-size: 16px;
+    font-weight: 450;
+}
+
+.wrapper-more .card-more:hover {
+    transition: 0.3s;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.wrapper-more .card a:hover {
+    color: #fff;
+    background-color: red;
+}
