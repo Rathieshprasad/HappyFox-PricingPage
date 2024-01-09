@@ -4,10 +4,15 @@
     <link rel="stylesheet" href="style.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500&display=swap" rel="stylesheet">
 
     <script>
        window.onload = function() {
-    // This code will run when the entire page has loaded
     document.getElementById("myButton").onclick = function() {
       document.getElementById("cs").innerHTML = 'Starter';
       document.getElementById("cg").innerHTML = 'Growth';
@@ -29,35 +34,38 @@
     </script>
 
     <!-- Top Nav Bar -->
+    <link rel="icon" href="//assets.www.happyfox.com/v2/images/zendesk-alternative/hf-mini.png">
     <title>HappyFox Help Desk Pricing</title>
     <div class="logo">
+      <div>
         <img id="hfTopbarlogo" src="//assets.www.happyfox.com/v2/images/site-nav/topbar-logo-black.svg" width="116" height="24" alt="happyfox logo" class="hf-productbar__logo">
-        <button>Products</button>
-        <div class="log-in">Log In</div>
+        <button>Products <i class="fa fa-caret-down" style="font-size:15px"></i></button>
+      </div>
+      <button id="log-in">Log In</button>
     </div>
 
-    
+     
     <!-- Help Desk Nav bar -->
     <nav>
-        <div class="hd-nav">
+      <div class="hd-nav">
         <div class="hd">
-        <img src="https://assets.www.happyfox.com/v2/images/site-nav/HD-logo.svg" alt="hd-icon" width="30">
-        <h3>helpdesk</h3>
+          <img src="https://assets.www.happyfox.com/v2/images/site-nav/HD-logo.svg" alt="hd-icon" width="30">
+          <h3>helpdesk</h3>
         </div>
         <div class="nav-elements">
-            <ul>
-                <li><button>Features</button></li>
-                <li><button>Solutions <span class="features__cl"></span></button></li>
-                <li><button>Pricing</button></li>
-                <li><button>Resources <span class="features__cl"></span></button></li>
-            </ul>
+          <ul>
+            <li><button>Features</button></li>
+            <li><button>Solutions <i class="fa fa-caret-down" style="font-size:15px"></i></li>
+            <li><button>Pricing</button></li>
+            <li><button>Resources <i class="fa fa-caret-down" style="font-size:15px"></i></li>
+          </ul>
         </div>
-
         <div class="hd-btn">
-            <button>Get a Demo</button>
+          <button>Get a Demo</button>
         </div>
-    </div>
+      </div>
     </nav>
+    
 </head>
 
 
@@ -90,7 +98,7 @@
     <div class="wrapper">
         <div class="card">
             <h3 id="cs">Mighty</h3>
-            <h1><span>$</span>26 <span>Per agent/mo</span></h1>
+            <h1><span>$</span>26 <span id="pa">Per agent/mo</span></h1>
             <p> 33% Savings<sup>*</sup></p>
             <hr>
             <ul>
@@ -100,11 +108,11 @@
                 <li>SSO (GSuite/ SAML/Azure)</li>
                 <li>Migration Assistance</li>
             </ul>
-            <a href="">Get a Demo <span class="features__cl"></span></a>
+            <a href="">Get a Demo <i class="fa fa-chevron-right" style="font-size: 15px;"></i></a>
         </div>
         <div class="card">
             <h3 id="cg">Fantasic</h3>
-            <h1><span>$</span>26 <span>Per agent/mo</span></h1>
+            <h1><span>$</span>49 <span id="pa">Per agent/mo</span></h1>
             <p> 33% Savings<sup>*</sup></p>
             <hr>
             <ul>
@@ -119,7 +127,7 @@
         <div class="card">
             <p style="color: red; margin-bottom: 0; font-size: 15px;">Most Popular</p>
             <h3 style="margin-top: 5px;" id="csc">Enterprise</h3>
-            <h1><span>$</span>26 <span>Per agent/mo</span></h1>
+            <h1><span>$</span>69 <span id="pa">Per agent/mo</span></h1>
             <p> 33% Savings<sup>*</sup></p>
             <hr>
             <ul>
@@ -133,7 +141,7 @@
         </div>
         <div class="card">
             <h3 id="csp">Enterprise Plus</h3>
-            <h1><span>$</span>26 <span>Per agent/mo</span></h1>
+            <h1><span>$</span>89 <span id="pa">Per agent/mo</span></h1>
             <p> 33% Savings <sup>*</sup></p>
             <hr>
             <ul>

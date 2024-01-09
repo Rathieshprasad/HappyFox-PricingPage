@@ -3,32 +3,28 @@
 body {
     margin: 0;
     padding: 0;
-    font-family: Arial, sans-serif;
+    font-family: 'poppins', Arial, sans-serif;
 }
 
 /************************** Top navbar **********************************/
 
-.logo{
-    padding: 20px 70px 0px ;
-}
-.logo img{
-    padding: 5px 5px 0px 5px;
-}
-.logo .log-in{
-    position: absolute;
-    right: 0;
-    top: 0;
-    padding: 20px 20px;
-    margin-right: 50px;
+.logo {
+    padding: 10px 100px 0px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .logo img {
+    padding: 5px;
+  }
+  
+  .logo button {
+    padding: 15px;
     margin-top: 5px;
-    color: #646f79;
-    font-size: small;
-    font-weight: 100;
-}
-.logo button{
-    padding: 15px 15px 10px 15px;
-    margin: 0 10px;
+    margin: 0 ;
     border: 1px solid #ffcbca;
+    border-bottom: none;
     border-radius: 10px 10px 0px 0px;
     cursor: pointer;
     color: #000000;
@@ -37,67 +33,78 @@ body {
     font-weight: bold;
     text-align: center;
     text-decoration: none;
-}
+  }
+  
+  #log-in {
+    margin-top: 10px;
+    color: #646f79;
+    background-color: #fff;
+    border: none;
+    font-size: small;
+    font-weight: 200;
+  }
+  
 /********************* Helpdesk navbar *********************************/
-nav{
+
+nav {
     border: 1px solid #ffcbca;
     border-bottom: none;
-    background-color:#ffeceb ;
-}
-
-nav .hd{
-    margin-left: 80px;
+    background-color: #ffeceb;
+  }
+  
+  .hd-nav {
     display: flex;
-    margin-bottom: 0;
-    
-}
-nav h3{
-    padding-left: 10px;
-    font-size: 25px;
-    font-weight: lighter;
-}
-
-.hd-nav{
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 80px; /* Adjust padding */
+  }
+  
+  .hd {
     display: flex;
-    flex-direction: row;
-}
-.nav-elements{
-    padding-left: 100px;
-}
-.nav-elements li{
-    padding-left: 80px;
-    padding-top: 5px;
-    list-style-type: none; 
-    display: inline-block;
-}
-.nav-elements li button{
-    padding: 10px 10px;
+    align-items: center;
+  }
+  
+  .hd img {
+    margin-right: 10px;
+  }
+  
+  .nav-elements ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .nav-elements li {
+    padding: 0 15px;
+  }
+  
+  .nav-elements li button {
+    padding: 10px 15px;
     border-radius: 10px;
     border: none;
     background-color: #ffeceb;
     color: #000000;
     font-size: 16px;
-    font-weight: bold;
+    font-family: 'poppins';
+    font-weight: 500;
     cursor: pointer;
-}
-
-.nav-elements li button:hover{
+  }
+  
+  .nav-elements li button:hover {
     transition: 0.5s;
     background-color: #ffffff;
-}
-
-.hd-btn{
-    margin-left: 100px;
-    margin-top: 23px;
-}
-
-.hd-btn button{
+  }
+  
+  .hd-btn button {
     padding: 7px 10px;
     border-radius: 5px;
-    border:none;
+    border: none;
     background-color: red;
     color: white;
-}
+  }
+  
 
 /*************************** Banner part**********************/
 
@@ -112,7 +119,8 @@ nav h3{
 
 .banner h1 {
     color: #333; 
-    font-size: 36px;
+    font-size: 40px;
+    font-weight: 400;
     margin: 0;
     margin-bottom: 20px; 
 }
@@ -159,36 +167,43 @@ nav h3{
 /************************* Button section *************************/
 
 .button-section {
-    display:flex;
+    display: flex;
     justify-content: space-between;
-      background-color: #f5f4f4; 
-      text-align: center;
-      padding: 20px 20px; 
-      margin: 60px 40px 0px; 
-      max-width: 1200px; 
-      border-radius: 15px;
-    overflow:hidden;
+    background-color: #f5f4f4;
+    text-align: center;
+    padding: 20px 20px;
+    margin: 60px auto 0; 
+    max-width: 80%; 
+    border-radius: 15px;
+    overflow: hidden;
   }
+  
   
   .btns{
       position: relative;
-      padding: 3px 100px;
-      border: black;
+      padding: 3px 50px;
+      border: 1.5px solid transparent;
       background-color: #f5f4f4;
       border-radius: 10px 10px 10px 10px;
       cursor: pointer;
       text-align: center;
       text-decoration: none;
       font-size: 16px;
-      font-weight: 200;
+      font-weight: 100;
       
   }
   
   .btns:hover {
       background-color: #fff;
-      border: 1.5px solid #c8c7c7;
+      border-color:#c8c7c7;
       font-weight: 550;
       
+  }
+
+  .btns:nth-of-type(2){
+    background-color: #fff;
+    border: 1.5px solid #c8c7c7;
+    font-weight: 550;
   }
   
   .btn-subtext p{
@@ -219,17 +234,20 @@ nav h3{
 }
 
 .wrapper .card h1{
-    font-size:40px;
+    color: #000000;
+    font-size:52px;
     font-weight: 550;
 }
 .wrapper .card span{
-    font-size: 25px;
+    font-size: 24px;
     font-weight: 500;
+    color: #000000;
 }
 
-.wrapper .card span{
-    font-size: 20px;
-    font-weight: 500;
+#pa{
+    font-size: 12px;
+    font-family: 'poppins';
+    font-weight: 100px;
 }
 
 .wrapper .card p{
@@ -249,7 +267,7 @@ hr { background-color: #eeeeee; height: 1px; border: 0; }
 
 .wrapper .card li{
     font-size: 15px;
-    font-weight: 100;
+    font-weight: 300;
     margin-bottom: 20px;
 }
 
@@ -285,7 +303,10 @@ hr { background-color: #eeeeee; height: 1px; border: 0; }
     margin: 60px auto; 
     max-width: 600px; 
     border-radius: 25px; 
+    font-weight: 300;
 }
+
+
 
 /************************ Comparison Table ***********************/
 
