@@ -1,11 +1,10 @@
-
 @font-face {
-  font-family: 'Hero New Regular';
-  src: local('Hero New Regular'), url('./Hero New Thin.woff') format('woff');
+  font-family: "Hero New Regular";
+  src: local("Hero New Regular"), url("./Hero New Regular.woff") format("woff");
 }
 @font-face {
-  font-family: 'Hero New Thin';
-  src: local('Hero New Thin'), url('/Hero New Thin.woff') format('woff');
+  font-family: "Hero New Thin";
+  src: local("Hero New Thin"), url("/Hero New Thin.woff") format("woff");
 }
 body {
   margin: 0;
@@ -70,7 +69,7 @@ nav {
   padding: 15px 80px;
 }
 
-.hd-nav h3{
+.hd-nav h3 {
   font-family: "Hero New Thin", Arial, sans-serif;
   font-weight: 100;
 }
@@ -216,7 +215,8 @@ nav {
   text-decoration: none;
   font-size: 16px;
   font-weight: 100;
-  transition: background-color 0.1s, border-color 0.1s, font-weight 0.1s ease-in-out;
+  transition: background-color 0.1s, border-color 0.1s,
+    font-weight 0.1s ease-in-out;
 }
 
 .btns:hover {
@@ -224,7 +224,6 @@ nav {
   border-color: #c8c7c7;
   font-weight: 550;
 }
-
 
 .btns:nth-of-type(2) {
   background-color: #fff;
@@ -563,127 +562,127 @@ tr:nth-child(even) {
 /******************************* Media queries ************************************************/
 @media screen and (max-width: 1200px) {
   .logo {
-      padding-right: 50px;
+    padding-right: 50px;
   }
 
   .hd-nav {
-      padding-right: 50px;
+    padding-right: 50px;
   }
 
   .button-section {
-      max-width: 90%;
+    max-width: 90%;
   }
 
   .wrapper .card {
-      margin: 30px 10px;
+    margin: 30px 10px;
   }
 
   .additional-info {
-      max-width: 80%;
+    max-width: 80%;
   }
   .heading-box {
-      max-width: 100%;
+    max-width: 100%;
   }
 }
 
 @media screen and (max-width: 992px) {
   .hd-nav {
-      padding-right: 30px;
+    padding-right: 30px;
   }
 
   .button-section {
-      flex-direction: column;
-      align-items: center;
+    flex-direction: column;
+    align-items: center;
   }
 
   .btns {
-      margin-top: 10px;
+    margin-top: 10px;
   }
 
   .wrapper {
-      flex-direction: column;
+    flex-direction: column;
   }
 
   .card-more {
-      max-width: 100%;
+    max-width: 100%;
   }
 
   .faq,
   .accordion {
-      padding: 20px;
+    padding: 20px;
   }
 }
 
 @media screen and (min-width: 768px) and (max-width: 991px) {
   .logo,
   .hd-nav {
-      padding: 10px 2%;
+    padding: 10px 2%;
   }
 
   .banner h1 {
-      font-size: 36px;
+    font-size: 36px;
   }
 
   .button-section {
-      padding: 20px 2%;
+    padding: 20px 2%;
   }
 }
 
 @media screen and (max-width: 768px) {
   .hd-nav {
-      padding-right: 20px;
+    padding-right: 20px;
   }
 
-  .logo{
+  .logo {
     padding-bottom: 0px;
   }
 
   .button-section {
-      padding-right: 10px;
+    padding-right: 10px;
   }
 
   .banner h1,
   .accordion h1 {
-      font-size: 32px;
+    font-size: 32px;
   }
 }
 
 @media only screen and (max-width: 767px) {
   .banner h1 {
-      text-align: center;
+    text-align: center;
   }
 
   .button-container {
-      flex-direction: column;
-      align-items: center;
+    flex-direction: column;
+    align-items: center;
   }
 }
 
 @media only screen and (max-width: 576px) {
   .logo {
-      padding-right: 20px;
+    padding-right: 20px;
   }
 
   .hd-nav {
-      padding-right: 10px;
+    padding-right: 10px;
   }
 
   .button-section {
-      padding-right: 5px;
+    padding-right: 5px;
   }
 
   .btns {
-      padding: 8px 15px;
-      font-size: 14px;
+    padding: 8px 15px;
+    font-size: 14px;
   }
 
   .banner h1 {
-      font-size: 26px;
+    font-size: 26px;
   }
 
   .faq,
   .accordion {
-      padding: 15px;
+    padding: 15px;
   }
 }
 
@@ -705,73 +704,71 @@ tr:nth-child(even) {
   }
 } */
 @media only screen and (max-width: 490px) {
-  table{
-      overflow-x: hidden; 
+  table {
+    overflow-x: hidden;
   }
 
   .logo,
   .hd-nav {
-      padding-right: 5%;
+    padding-right: 5%;
   }
 
-  .products-btn{
+  .products-btn {
     display: none;
   }
 
-  .hd-nav li{
+  .hd-nav li {
     display: none;
   }
 
   .banner h1 {
-      font-size: 32px;
-      text-align: center;
+    font-size: 32px;
+    text-align: center;
   }
 
   .button-section {
-      padding-right: 5%;
-      text-align: center; 
+    padding-right: 5%;
+    text-align: center;
   }
 
-  .button-container{
+  .button-container {
     display: flex;
     flex-direction: row;
     width: 100%;
   }
 
-  .button-container button{
+  .button-container button {
     width: 50%;
   }
 
-  .wrapper-more{
+  .wrapper-more {
     padding: 0;
     margin: auto;
     align-items: center;
     flex-direction: column;
   }
 
-  .wrapper-more .card-more{
+  .wrapper-more .card-more {
     /* max-width: 0; */
     max-width: 75%;
     width: 100%;
     margin: 10px 0;
   }
 
-  th,td{
-    display:block;
+  th,
+  td {
+    display: block;
     width: 100%;
     box-sizing: border-box;
   }
 
-
   .wrapper .card {
-      margin: 15px 5px; 
+    margin: 15px 5px;
   }
 }
 
-@media only screen and (max-width: 360px){
-  .faq{
+@media only screen and (max-width: 360px) {
+  .faq {
     max-width: fit-content;
   }
 }
-
-
